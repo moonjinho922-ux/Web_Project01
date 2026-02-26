@@ -8,39 +8,45 @@
     <body>
         <header>
             <h1>Welcome to T&J Recipe Studio</h1>
+            <p>Find easy, tasty recipes and enjoy a clean cooking experience.</p>
             <nav aria-label="navigation">
                 <a href="index.html">Home</a>
                 <a href="recipes.html">Recipes</a>
-                <a href="recipe_detail.html">Recipe Detail</a>
-                <a href="about.html">About us</a>
+                <a href="about.html">About</a>
+                <a href="#" class="mode-btn">Light / Dark Mode</a>
             </nav>
         </header>
 
         <main>
-            <section>
-                <h2>Main Homepage</h2>
-                <p>This is where main info goes</p>
-                <a href="recipes.html">Start viewing our recipes</a>
-            </section>
+            <section id="explore-section">
+                <h2 id="explore">Explore Recipes</h2>
 
-            <section>
-                <h2>Featured Recipes</h2>
-                <article>
-                    <h3>Recipe card 1</h3>
-                    <p>short description</p>
-                </article>
-                <article>
-                    <h3>Recipe card 2</h3>
-                    <p>short description</p>
-                </article>
-                <article>
-                    <h3>Recipe card 3</h3>
-                    <p>short description</p>
-                </article>
+                <div id="recipes">
+                    <article class="recipe-card">
+                        <a href="recipe1.html"><img src=".jpg" alt="Recipe 1"></a>
+                        <h3>Recipe 1</h3>
+                    </article>
+
+                    <article class="recipe-card">
+                        <a href="recipe2.html"><img src=".jpg" alt="Recipe 2"></a>
+                        <h3>Recipe 2</h3>
+                    </article>
+    
+                    <article class="recipe-card">
+                        <a href="recipe3.html"><img src=".jpg" alt="Recipe 3"></a>
+                        <h3>Recipe 3</h3>
+                    </article>
+    
+                    <article class="recipe-card">
+                        <a href="recipe4.html"><img src=".jpg" alt="Recipe 4"></a>
+                        <h3>Recipe 4</h3>
+                    </article>
+                </div>
+
             </section>
         </main>
         <footer>
-            <p>2026 T&J Recipe Studio</p>
+            <p>&copy;2026 T&J Recipe Studio</p>
         </footer>
     </body>
 </html>
