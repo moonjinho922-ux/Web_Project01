@@ -86,9 +86,13 @@ nav a {
 
 /* ── Dark Mode ~ * -> look at every sibling after the checkbox ── */
 #dark-toggle:checked ~ header,
-#dark-toggle:checked ~ main,
-#dark-toggle:checked ~ footer {
+#dark-toggle:checked ~ main{
     background-color: #1a1208;
+    color: #e4d6d0;
+}
+
+#dark-toggle:checked ~ footer {
+    background-color: #2a1f1a;
     color: #e4d6d0;
 }
 
