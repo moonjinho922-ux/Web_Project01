@@ -69,11 +69,62 @@ nav a {
     display: none;
 }
 
-/* dark mode span toggling - AI helped*/
-.dark-mode { display: none; }
-.light-mode { display: inline; }
-#dark-toggle:checked ~ * .dark-mode { display: inline; }
-#dark-toggle:checked ~ * .light-mode { display: none; }
+/* dark mode span toggling */
+.dark-mode { 
+    display: none; 
+}
+.light-mode { 
+    display: inline; 
+}
+
+#dark-toggle:checked ~ * .dark-mode { 
+    display: inline; 
+}
+#dark-toggle:checked ~ * .light-mode { 
+    display: none; 
+}
+
+/* ── Dark Mode ~ * -> look at every sibling after the checkbox ── */
+#dark-toggle:checked ~ header,
+#dark-toggle:checked ~ main,
+#dark-toggle:checked ~ footer {
+    background-color: #1a1208;
+    color: #e4d6d0;
+}
+
+#dark-toggle:checked ~ header {
+    background-color: #2a1f1a;
+    border-bottom-color: #444;
+}
+
+#dark-toggle:checked ~ * nav {
+    background-color: #241a0e;
+    border-bottom-color: #444;
+}
+
+#dark-toggle:checked ~ * .nav-brand,
+#dark-toggle:checked ~ * nav a {
+    color: #e4d6d0;
+}
+
+#dark-toggle:checked ~ * .recipe-card,
+#dark-toggle:checked ~ * .team-list li,
+#dark-toggle:checked ~ * .contact-card {
+    background-color: #241a0e;
+    border-color: #444;
+    color: #e4d6d0;
+}
+
+#dark-toggle:checked ~ * .contact-info strong {
+    color: white;
+}
+
+#dark-toggle:checked ~ * .about-text p {
+    color: #ccc;
+}
+
+
+
 
 main {
     padding: 30px 60px;
@@ -189,7 +240,6 @@ aside {
 }
 
 footer {
-    margin-top: 40px;
     background-color: #2a1f1a;
     padding: 18px;
     font-size: 14px;
