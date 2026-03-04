@@ -6,6 +6,9 @@
         <title>Recipe Studio</title>
     </head>
     <body>
+        <!-- toggle Dark/Light mode -->
+        <input type="checkbox" id="dark-toggle">
+
         <header>
             <h1>Welcome to T&J Recipe Studio</h1>
             <p>Find easy, tasty recipes and enjoy a clean cooking experience.</p>
@@ -13,7 +16,10 @@
                 <a href="index.html">Home</a>
                 <a href="recipes.html">Recipes</a>
                 <a href="about.html">About</a>
-                <a href="#" class="mode-btn">Light / Dark Mode</a>
+                <label for="dark-toggle" class="mode-label">
+                    <span class="light-mode">Dark Mode</span>
+                    <span class="dark-mode">Light Mode</span>
+                </label>
             </nav>
         </header>
 
