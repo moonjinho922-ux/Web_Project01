@@ -6,14 +6,23 @@
         <title>Recipe Studio</title>
     </head>
     <body>
+        <!-- toggle Dark/Light mode -->
+        <input type="checkbox" id="dark-toggle">
+        <!-- header and nav bar -->
         <header>
-            <h1>Recipes</h1>
             <nav aria-label="navigation">
-                <a href="index.html">Home</a>
-                <a href="recipes.html">Recipes</a>
-                <a href="about.html">About</a>
-                <a href="#" class="mode-btn">Light / Dark Mode</a>
+                <div class="nav-brand">T&amp;J Recipe Studio</div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="recipes.html" class="nav-active">Recipes</a>
+                    <a href="about.html">About</a>
+                    <label for="dark-toggle" class="mode-label mode-btn">
+                        <span class="light-mode">Dark Mode</span>
+                        <span class="dark-mode">Light Mode</span>
+                    </label>
+                </div>
             </nav>
+            <h1>Recipes</h1>
         </header>
 
         <main>
