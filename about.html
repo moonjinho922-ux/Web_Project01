@@ -6,32 +6,74 @@
         <title>Recipe Studio</title>
     </head>
     <body>
+        <!-- toggle Dark/Light mode -->
+        <input type="checkbox" id="dark-toggle">
+
         <header>
-            <h1>About Us</h1>
+            <h1>Welcome to T&J Recipe Studio</h1>
+            <p>Find easy, tasty recipes and enjoy a clean cooking experience.</p>
             <nav aria-label="navigation">
                 <a href="index.html">Home</a>
                 <a href="recipes.html">Recipes</a>
                 <a href="about.html">About</a>
-                <a href="#" class="mode-btn">Light / Dark Mode</a>
+                <label for="dark-toggle" class="mode-label">
+                    <span class="light-mode">Dark Mode</span>
+                    <span class="dark-mode">Light Mode</span>
+                </label>
             </nav>
         </header>
+        
         <main>
             <section class="about-section">
-                <h1>About Recipe Studio</h1>
-                <p>
-                    Recipe Studio was created to make cooking feel simple and enjoyable for everyone. We wanted to design a website that is clean, easy to use, and not overwhelming. Users can browse different recipes, view ingredients, and follow step-by-step instructions without confusion. Our goal is to create a smooth and organized experience that works well on both desktop and mobile, so anyone can quickly find a recipe and start cooking.
-                </p>
-                <div class="about-image">
-                    <img src="" alt="Recipe Studio Team">
+                <!-- left side container -->
+                <div class="about-text">
+                    <h2>About Recipe Studio</h2>
+                    <p>
+                        Recipe Studio was created to make cooking feel simple and enjoyable for everyone.
+                        We wanted to design a website that is clean, easy to use, and not overwhelming.
+                    </p>
+                    <p>
+                        Users can browse different recipes, view ingredients, and follow step-by-step
+                        instructions without confusion. Our goal is to create a smooth and organized
+                        experience that works well on both desktop and mobile.
+                    </p>
+
+                    <h2>Meet the Team</h2>
+                    <ul class="team-list">
+                        <li>
+                            <span>Trinh Bui</span>
+                        </li>
+                        <li>
+                            <span>Jinho Moon</span>
+                        </li>
+                    </ul>
                 </div>
-                <h2>Meet the Team</h2>
-                <ul class="about-team">
-                    <li>Trinh Bui</li>
-                    <li>Jinho Moon</li>
-                </ul>
-                <h2>Contact Us</h2>
-                <p>Email: test1@email</p>
-                <p>Email: test2@email</p>
+
+                <!-- right side container -->
+                <aside>
+                    <div class="contact-card">
+                        <h3>Contact Us</h3>
+
+                        <div class="contact-item">
+                            <div class="contact-info">
+                                <strong>Trinh Bui</strong>
+                                <a href="mailto:test1@email.com">test1@email.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-info">
+                                <strong>Jinho Moon</strong>
+                                <a href="mailto:test2@email.com">test2@email.com</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <br>
+                            <img src="assets/kitten.png" alt="cute kitten">
+                        </div>
+                    </div>
+                </aside>
             </section>
         </main>
         <footer>
