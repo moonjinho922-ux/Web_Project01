@@ -127,12 +127,42 @@ nav a {
     color: #ccc;
 }
 
+/* Home Section */
+#main-explore-btn {
+    background-color: white;
+    font-size: 20px;
+    margin-top: 45px;
+    padding: 5px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+}
 
+#main-explore-section {
+    background-color: white;
+    width: 80%;
+    margin: 30px auto 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+}
 
+#main-recipes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
 
-main {
-    padding: 30px 60px;
-    text-align: left;
+.main-recipe-card {
+    width: 220px;
+}
+
+.main-recipe-card img {
+    width: 90%;
+    height: 180px;
+    object-fit: flex;
+    margin-top: 10px;
 }
 
 /* About Section */
