@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Recipe Studio</title>
+    </head>
+    <body>
+        <!-- toggle Dark/Light mode -->
+        <input type="checkbox" id="dark-toggle">
+        <!-- header and nav bar -->
+        <header>
+            <h1>Egg Sandwich</h1>
+            <a class="back-btn" href="recipes.html">Back to Recipes</a>
+            <nav aria-label="navigation">
+              <div class="nav-brand">T&J Recipe Studio</div>
+              <div class="nav-links">
+                  <a href="index.html" class="nav-active">Home</a>
+                  <a href="recipes.html">Recipes</a>
+                  <a href="about.html">About</a>
+                  <label for="dark-toggle" class="mode-label mode-btn">
+                      <span class="light-mode">Dark Mode</span>
+                      <span class="dark-mode">Light Mode</span>
+                  </label>
+              </div>
+          </nav>
+        </header>
+
+        <!--Main-->
+        <main class="recipe-page">
+
+            <section class="recipe-meta" aria-label="Recipe details">
+                <div class="meta-item">
+                  <h2>Prep Time</h2>
+                  <p>5 min</p>
+                </div>
+        
+                <div class="meta-item">
+                  <h2>Cook Time</h2>
+                  <p>7 min</p>
+                </div>
+        
+                <div class="meta-item">
+                  <h2>Difficulty</h2>
+                  <p>Easy</p>
+                </div>
+              </section>
+
+              <section class="recipe-grid" aria-label="Ingredients steps and picture">
+        
+                <section class="card" aria-label="Ingredients">
+                  <h2>Ingredients</h2>
+                  <ul>
+                    <li>2 eggs</li>
+                    <li>2 slices bread (or 1 bun)</li>
+                    <li>1 slice cheese (optional)</li>
+                    <li>1 tbsp butter or oil</li>
+                    <li>Salt + pepper</li>
+                    <li>(Optional) mayo / ketchup / hot sauce</li>
+                  </ul>
+                </section>
+        
+                <section class="card" aria-label="Cooking Steps">
+                  <h2>Cooking Steps</h2>
+                  <ol>
+                    <li>Crack eggs in a bowl, add salt + pepper, mix.</li>
+                    <li>Heat pan on medium, add butter/oil.</li>
+                    <li>Pour eggs and scramble (or cook as one folded omelet).</li>
+                    <li>Toast bread.</li>
+                    <li>Add eggs + cheese to bread.</li>
+                    <li>Add sauce if you want, then close sandwich.</li>
+                  </ol>
+                </section>
+        
+                <section class="card" aria-label="Picture">
+                  <h2>Picture</h2>
+                  <img src="assets/sandwich2.png" alt="Egg Sandwich">
+                </section>
+        
+              </section>
+
+              <!--Source-->
+              <section class="sources" aria-label="Sources">
+                <h2>Sources</h2>
+                <a href="https://www.allrecipes.com/recipe/139551/egg-sandwich/">
+                Allrecipes – Egg Sandwich
+                </a>
+              </section>
+
+        </main>
+        
+        <footer>
+            <p>2026 T&J Recipe Studio</p>
+        </footer>
+    </body>
+</html>
