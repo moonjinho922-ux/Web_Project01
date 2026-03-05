@@ -130,8 +130,8 @@ nav a {
 /* Home Section */
 #main-explore-btn {
     background-color: white;
-    font-size: 15px;
-    margin-top: 65px;
+    font-size: 20px;
+    margin-top: 55px;
     padding: 5px 20px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -141,19 +141,20 @@ nav a {
 #main-explore-section {
     width: 80%;
     margin: 1px auto 60px;
-    padding: 25px;
+    padding: 35px;
 }
 
 #main-recipes {
     display: flex;
     justify-content: center;
     gap: 15px;
+    padding: 15px;
     margin-top: 30px;
 }
 
 .main-recipe-card {
     width: 220px;
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     border-radius: 5px;
     font-size: 12px;
 }
@@ -163,10 +164,40 @@ nav a {
     height: 180px;
     object-fit: flex;
     margin-top: 10px;
+    border-radius: 8px;
 }
 
-/* Recipes Section
+/* Recipes Section */
+#recipes-explore-section {
+    width: 80%;
+    margin: 60px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
+.recipe-card {
+    background: white;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: flex;
+    border-radius: 8px;
+}
+
+.recipes-explore {
+    display: inline-block;
+    align-self: center;
+    padding: 6px 14px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
 
 /* About Section */
 .about-section {
