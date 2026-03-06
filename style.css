@@ -113,7 +113,9 @@ nav a {
 
 #dark-toggle:checked ~ * .recipe-card,
 #dark-toggle:checked ~ * .team-list li,
-#dark-toggle:checked ~ * .contact-card {
+#dark-toggle:checked ~ * .contact-card,
+#dark-toggle:checked ~ * .sources,
+#dark-toggle:checked ~ * .sources a {
     background-color: #241a0e;
     border-color: #444;
     color: #e4d6d0;
@@ -140,8 +142,8 @@ nav a {
 
 #main-explore-section {
     width: 80%;
-    margin: 1px auto 60px;
-    padding: 35px;
+    margin: 1px auto 0px;
+    padding: 5px 0px 65px;
 }
 
 #main-recipes {
@@ -170,7 +172,8 @@ nav a {
 /* Recipes Section */
 #recipes-explore-section {
     width: 80%;
-    margin: 60px auto 60px;
+    margin: 0px auto 0px;
+    padding: 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -208,7 +211,7 @@ nav a {
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin: 20px 0;
+    padding-top: 20px;
 }
   
 .meta-item {
@@ -261,9 +264,9 @@ nav a {
 }
 
 .sources {
-    width: 80%;
-    margin: 30px auto;
-    padding: 16px 20px;
+    width: 40%;
+    margin: 0px auto 20px;
+    padding: 16px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background: white;
@@ -295,6 +298,7 @@ nav a {
     align-items: flex-start;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 50px;
 }
 
 .about-text {
