@@ -123,7 +123,9 @@ nav a:hover {
 
 #dark-toggle:checked ~ * .recipe-card,
 #dark-toggle:checked ~ * .team-list li,
-#dark-toggle:checked ~ * .contact-card {
+#dark-toggle:checked ~ * .contact-card,
+#dark-toggle:checked ~ * .sources,
+#dark-toggle:checked ~ * .sources a {
     background-color: #241a0e;
     border-color: #444;
     color: #e4d6d0;
@@ -160,8 +162,8 @@ nav a:hover {
 
 #main-explore-section {
     width: 80%;
-    margin: 1px auto 60px;
-    padding: 35px;
+    margin: 1px auto 0px;
+    padding: 5px 0px 65px;
 }
 
 #main-recipes {
@@ -193,7 +195,8 @@ nav a:hover {
 /* Recipes Section */
 #recipes-explore-section {
     width: 80%;
-    margin: 60px auto 60px;
+    margin: 0px auto 0px;
+    padding: 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -259,7 +262,6 @@ nav a:hover {
     gap: 16px;
     justify-content: center;
     padding-top: 20px;
-    animation: fadeInUp 1s ease-out;
 }
   
 .meta-item {
@@ -320,10 +322,9 @@ nav a:hover {
     width: 40%;
     margin: 0px auto 20px;
     padding: 16px;
-    background-color: #ffffff;
-    border: 1px solid #d9cdea;
-    animation: fadeInUp 1s ease-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
 }
 
 .sources h2 {
@@ -353,7 +354,6 @@ nav a:hover {
     max-width: 1100px;
     margin: 0 auto;
     padding: 50px;
-    animation: fadeInUp 1s ease-out;
 }
 
 .about-text {
