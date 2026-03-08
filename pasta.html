@@ -1,99 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-        <title>Recipe Studio</title>
-    </head>
-    <body>
-        <!-- toggle Dark/Light mode -->
-        <input type="checkbox" id="dark-toggle">
-        <!-- header and nav bar -->
-        <header>
-            <h1>Chicken Alfredo Pasta</h1>
-            <a class="back-btn" href="recipes.html">Back to Recipes</a>
-            <nav aria-label="navigation">
-              <div class="nav-brand">T&J Recipe Studio</div>
-              <div class="nav-links">
-                  <a href="index.html" class="nav-active">Home</a>
-                  <a href="recipes.html">Recipes</a>
-                  <a href="about.html">About</a>
-                  <label for="dark-toggle" class="mode-label mode-btn">
-                      <span class="light-mode">Dark Mode</span>
-                      <span class="dark-mode">Light Mode</span>
-                  </label>
-              </div>
-          </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <title>Recipe Studio</title>
+  </head>
 
-        <!--Main-->
-        <main class="recipe-page">
+  <body>
+    <!-- Toggle Dark/Light mode -->
+    <input type="checkbox" id="dark-toggle">
+    <!-- Header and Nav Bar -->
+    <header>
+      <h1>Chicken Alfredo Pasta</h1>
+      <a class="back-btn" href="recipes.html">Back to Recipes</a>
+      <nav aria-label="navigation">
+        <div class="nav-brand">T&J Recipe Studio</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-active">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="about.html">About</a>
+          <label for="dark-toggle" class="mode-label mode-btn">
+            <span class="light-mode">Dark Mode</span>
+            <span class="dark-mode">Light Mode</span>
+          </label>
+        </div>
+      </nav>
+    </header>
 
-            <section class="recipe-meta" aria-label="Recipe details">
-                <div class="meta-item">
-                  <h2>Prep Time:</h2>
-                  <p>10 min</p>
-                </div>
-        
-                <div class="meta-item">
-                  <h2>Cook Time:</h2>
-                  <p>25 min</p>
-                </div>
-        
-                <div class="meta-item">
-                  <h2>Difficulty:</h2>
-                  <p>Medium</p>
-                </div>
-              </section>
+    <!--Main content-->
+    <main class="recipe-page">
+      <!-- Recipe detail content -->
+      <section class="recipe-meta" aria-label="Recipe details">
+        <div class="meta-item">
+          <h2>Prep Time:</h2>
+          <p>10 min</p>
+        </div>
 
-              <section class="recipe-grid" aria-label="Ingredients steps and picture">
-        
-                <section class="card" aria-label="Ingredients">
-                    <h2>Ingredients</h2>
-                    <ul>
-                      <li>8 oz fettuccine (or any pasta)</li>
-                      <li>1 chicken breast (or 2 thighs)</li>
-                      <li>Salt + pepper + garlic powder</li>
-                      <li>1 tbsp butter</li>
-                      <li>1 cup heavy cream (or half-and-half)</li>
-                      <li>1 cup parmesan (grated)</li>
-                      <li>2 cloves garlic (optional)</li>
-                    </ul>
-                  </section>
-          
-                  <section class="card" aria-label="Cooking Steps">
-                    <h2>Cooking Steps</h2>
-                    <ol>
-                      <li>Cook pasta in salted water, then drain (save a little pasta water).</li>
-                      <li>Season chicken with salt/pepper/garlic powder.</li>
-                      <li>Cook chicken in pan until done (about 4–6 min each side), then slice.</li>
-                      <li>In same pan, melt butter, add garlic (optional), then add cream.</li>
-                      <li>Add parmesan and stir until smooth.</li>
-                      <li>Add pasta + chicken. If too thick, add a splash of pasta water.</li>
-                    </ol>
-                  </section>
-        
-                <section class="card" aria-label="Picture">
-                  <h2>Picture</h2>
-                  <img src="assets/pasta2.png" alt="Chicken Alfredo Pasta">
-                </section>
-        
-              </section>
-              
-              <!--Source-->            
-              <section class="sources" aria-label="Sources">
-                <h2>Source</h2>
-                <a href="https://www.thekitchn.com/how-to-make-chicken-alfredo-pasta-249767">
-                The Kitchn – Classic Chicken Alfredo Pasta
-                </a>
-              </section>
+        <div class="meta-item">
+          <h2>Cook Time:</h2>
+          <p>25 min</p>
+        </div>
 
-        </main>
-        <footer>
-            <p>2026 T&J Recipe Studio</p>
-        </footer>
-    </body>
+        <div class="meta-item">
+          <h2>Difficulty:</h2>
+          <p>Medium</p>
+        </div>
+      </section>
+      <!-- Card Recipe -->
+      <section class="recipe-grid" aria-label="Ingredients steps and picture">
+        <section class="card" aria-label="Ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>8 oz fettuccine (or any pasta)</li>
+            <li>1 chicken breast (or 2 thighs)</li>
+            <li>Salt + pepper + garlic powder</li>
+            <li>1 tbsp butter</li>
+            <li>1 cup heavy cream (or half-and-half)</li>
+            <li>1 cup parmesan (grated)</li>
+            <li>2 cloves garlic (optional)</li>
+          </ul>
+        </section>
+  
+        <section class="card" aria-label="Cooking Steps">
+          <h2>Cooking Steps</h2>
+          <ol>
+            <li>Cook pasta in salted water, then drain (save a little pasta water).</li>
+            <li>Season chicken with salt/pepper/garlic powder.</li>
+            <li>Cook chicken in pan until done (about 4-6 min each side), then slice.</li>
+            <li>In same pan, melt butter, add garlic (optional), then add cream.</li>
+            <li>Add parmesan and stir until smooth.</li>
+            <li>Add pasta + chicken. If too thick, add a splash of pasta water.</li>
+          </ol>
+        </section>
+        <!-- Card Picture -->
+        <section class="card" aria-label="Picture">
+          <h2>Picture</h2>
+          <img src="assets/pasta2.png" alt="Chicken Alfredo Pasta">
+        </section>
+      </section>
+      <!-- Source/Link -->          
+      <section class="sources" aria-label="Sources">
+        <h2>Source</h2>
+        <a href="https://www.thekitchn.com/how-to-make-chicken-alfredo-pasta-249767">
+        The Kitchn - Classic Chicken Alfredo Pasta
+        </a>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <p>2026 T&J Recipe Studio</p>
+    </footer>
+  </body>
 </html>

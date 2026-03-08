@@ -1,100 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-        <title>Recipe Studio</title>
-    </head>
-    <body>
-        <!-- toggle Dark/Light mode -->
-        <input type="checkbox" id="dark-toggle">
-        <!-- header and nav bar -->
-        <header>
-            <h1>Mac & Cheese</h1>
-            <a class="back-btn" href="recipes.html">Back to Recipes</a>
-            <nav aria-label="navigation">
-              <div class="nav-brand">T&J Recipe Studio</div>
-              <div class="nav-links">
-                  <a href="index.html" class="nav-active">Home</a>
-                  <a href="recipes.html">Recipes</a>
-                  <a href="about.html">About</a>
-                  <label for="dark-toggle" class="mode-label mode-btn">
-                      <span class="light-mode">Dark Mode</span>
-                      <span class="dark-mode">Light Mode</span>
-                  </label>
-              </div>
-          </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <title>Recipe Studio</title>
+  </head>
 
-        <!--Main-->
-        <main class="recipe-page">
+  <body>
+    <!-- Toggle Dark/Light mode -->
+    <input type="checkbox" id="dark-toggle">
+    <!-- Header and Nav Bar -->
+    <header>
+      <h1>Mac & Cheese</h1>
+      <a class="back-btn" href="recipes.html">Back to Recipes</a>
+      <nav aria-label="navigation">
+        <div class="nav-brand">T&J Recipe Studio</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-active">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="about.html">About</a>
+          <label for="dark-toggle" class="mode-label mode-btn">
+            <span class="light-mode">Dark Mode</span>
+            <span class="dark-mode">Light Mode</span>
+          </label>
+        </div>
+      </nav>
+    </header>
 
-            <section class="recipe-meta" aria-label="Recipe details">
-                <div class="meta-item">
-                  <h2>Prep Time:</h2>
-                  <p>15 min</p>
-                </div>
-        
-                <div class="meta-item">
-                  <h2>Cook Time:</h2>
-                  <p>30 min</p>
-                </div>
-        
-                <div class="meta-item">
-                  <h2>Difficulty:</h2>
-                  <p>Medium</p>
-                </div>
-              </section>
+    <!--Main content-->
+    <main class="recipe-page">
+      <!-- Recipe detail content -->
+      <section class="recipe-meta" aria-label="Recipe details">
+        <div class="meta-item">
+          <h2>Prep Time:</h2>
+          <p>15 min</p>
+        </div>
 
-              <section class="recipe-grid" aria-label="Ingredients steps and picture">
-        
-                <section class="card" aria-label="Ingredients">
-                    <h2>Ingredients</h2>
-                    <ul>
-                      <li>8 oz elbow macaroni</li>
-                      <li>2 tbsp butter</li>
-                      <li>2 tbsp flour</li>
-                      <li>2 cups milk</li>
-                      <li>2 cups shredded cheese (cheddar best)</li>
-                      <li>Salt + pepper</li>
-                      <li>(Optional) paprika or hot sauce</li>
-                    </ul>
-                  </section>
-          
-                  <section class="card" aria-label="Cooking Steps">
-                    <h2>Cooking Steps</h2>
-                    <ol>
-                      <li>Cook macaroni, drain.</li>
-                      <li>Melt butter in pot on medium.</li>
-                      <li>Add flour, stir 1 min (makes a paste).</li>
-                      <li>Slowly pour milk in while stirring (no lumps).</li>
-                      <li>Stir until it thickens (3–5 min).</li>
-                      <li>Turn heat low, add cheese, mix until melted.</li>
-                      <li>Add macaroni, mix, season with salt/pepper.</li>
-                    </ol>
-                  </section>
-        
-                <section class="card" aria-label="Picture">
-                  <h2>Picture</h2>
-                  <img src="assets/mac2.png" alt="Mac and Cheese">
-                </section>
-        
-              </section>
+        <div class="meta-item">
+          <h2>Cook Time:</h2>
+          <p>30 min</p>
+        </div>
 
-              <!--Source-->
-              <section class="sources" aria-label="Sources">
-                <h2>Source</h2>
-                <a href="https://www.allrecipes.com/recipe/238691/simple-macaroni-and-cheese/">
-                Allrecipes – Simple Macaroni and Cheese
-                </a>
-              </section>
-
-        </main>
-        <footer>
-            <p>2026 T&J Recipe Studio</p>
-        </footer>
-    </body>
+        <div class="meta-item">
+          <h2>Difficulty:</h2>
+          <p>Medium</p>
+        </div>
+      </section>
+      <!-- Card Recipe -->
+      <section class="recipe-grid" aria-label="Ingredients steps and picture">
+        <section class="card" aria-label="Ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+              <li>8 oz elbow macaroni</li>
+              <li>2 tbsp butter</li>
+              <li>2 tbsp flour</li>
+              <li>2 cups milk</li>
+              <li>2 cups shredded cheese (cheddar best)</li>
+              <li>Salt + pepper</li>
+              <li>(Optional) paprika or hot sauce</li>
+            </ul>
+        </section>
+      
+        <section class="card" aria-label="Cooking Steps">
+          <h2>Cooking Steps</h2>
+          <ol>
+            <li>Cook macaroni, drain.</li>
+            <li>Melt butter in pot on medium.</li>
+            <li>Add flour, stir 1 min (makes a paste).</li>
+            <li>Slowly pour milk in while stirring (no lumps).</li>
+            <li>Stir until it thickens (3-5 min).</li>
+            <li>Turn heat low, add cheese, mix until melted.</li>
+            <li>Add macaroni, mix, season with salt/pepper.</li>
+          </ol>
+        </section>
+        <!-- Card Picture -->
+        <section class="card" aria-label="Picture">
+          <h2>Picture</h2>
+          <img src="assets/mac2.png" alt="Mac and Cheese">
+        </section>
+      </section>
+      <!-- Source/Link -->
+      <section class="sources" aria-label="Sources">
+        <h2>Source</h2>
+        <a href="https://www.allrecipes.com/recipe/238691/simple-macaroni-and-cheese/">
+        Allrecipes - Simple Macaroni and Cheese
+        </a>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <p>2026 T&J Recipe Studio</p>
+    </footer>
+  </body>
 </html>

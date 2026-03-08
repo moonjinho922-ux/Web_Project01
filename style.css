@@ -23,10 +23,9 @@ header h1 {
 header p {
     margin-top: 10px;
     font-size: 15px;
-    color: #6b5c7a;
     animation: fadeInUp 1s ease-out;
 }
-
+/* nav bar */
 nav {
     position: fixed;
     top: 0;
@@ -96,9 +95,14 @@ nav a:hover {
 
 /* ── Dark Mode ~ * -> look at every sibling after the checkbox ── */
 #dark-toggle:checked ~ header,
-#dark-toggle:checked ~ main{
+#dark-toggle:checked ~ main, 
+#dark-toggle:checked ~ body {
     background-color: #1a1208;
     color: #e4d6d0;
+}
+
+body:has(#dark-toggle:checked) {
+    background-color: #1a1208;
 }
 
 #dark-toggle:checked ~ footer {
@@ -122,11 +126,21 @@ nav a:hover {
 }
 
 #dark-toggle:checked ~ * .recipe-card,
+#dark-toggle:checked ~ * .main-recipe-card,
 #dark-toggle:checked ~ * .team-list li,
 #dark-toggle:checked ~ * .contact-card,
 #dark-toggle:checked ~ * .sources,
-#dark-toggle:checked ~ * .sources a {
+#dark-toggle:checked ~ * .sources a,
+#dark-toggle:checked ~ * .meta-item,
+#dark-toggle:checked ~ * .card {
     background-color: #241a0e;
+    border-color: #444;
+    color: #e4d6d0;
+}
+
+#dark-toggle:checked ~ * .back-btn,
+#dark-toggle:checked ~ * .recipes-explore {
+    background-color: #4c453d;
     border-color: #444;
     color: #e4d6d0;
 }
@@ -158,7 +172,6 @@ nav a:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
-
 
 #main-explore-section {
     width: 80%;
@@ -241,11 +254,12 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* recipe details */
-
+/* Recipe details */
 .back-btn {
     background-color: #f3edfb;
     border: 1px solid #cdbcf0;
+    border-radius: 20px;
+    padding: 2px 12px 2px 12px;
     color: #5b3ea8;
     margin-top: 15px;
     animation: fadeInUp 1.5s ease-out forwards;
@@ -324,7 +338,6 @@ nav a:hover {
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background: white;
 }
 
 .sources h2 {
@@ -344,7 +357,6 @@ nav a:hover {
 .sources a:hover {
     text-decoration: underline;
 }
-
 
 /* About Section */
 .about-section {
@@ -395,7 +407,7 @@ nav a:hover {
     color: black;
 }
 
-/* right side of about section */
+/* Right side of about section */
 aside {
     width: 220px;
     flex-shrink: 0;
