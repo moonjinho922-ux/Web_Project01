@@ -1,99 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-        <title>Recipe Studio</title>
-    </head>
-    <body>
-        <!-- toggle Dark/Light mode -->
-        <input type="checkbox" id="dark-toggle">
-        <!-- header and nav bar -->
-        <header>
-            <h1>Spaghetti w Meatballs</h1>
-            <a class="back-btn" href="recipes.html">Back to Recipes</a>
-            <nav aria-label="navigation">
-              <div class="nav-brand">T&J Recipe Studio</div>
-              <div class="nav-links">
-                  <a href="index.html" class="nav-active">Home</a>
-                  <a href="recipes.html">Recipes</a>
-                  <a href="about.html">About</a>
-                  <label for="dark-toggle" class="mode-label mode-btn">
-                      <span class="light-mode">Dark Mode</span>
-                      <span class="dark-mode">Light Mode</span>
-                  </label>
-              </div>
-          </nav>
-        </header>
+    <title>Recipe Studio</title>
+  </head>
+  
+  <body>
+    <!-- Toggle Dark/Light mode -->
+    <input type="checkbox" id="dark-toggle">
+    <!-- Header and Nav Bar -->
+    <header>
+      <h1>Spaghetti w Meatballs</h1>
+      <a class="back-btn" href="recipes.html">Back to Recipes</a>
+      <nav aria-label="navigation">
+        <div class="nav-brand">T&J Recipe Studio</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-active">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="about.html">About</a>
+          <label for="dark-toggle" class="mode-label mode-btn">
+            <span class="light-mode">Dark Mode</span>
+            <span class="dark-mode">Light Mode</span>
+          </label>
+        </div>
+      </nav>
+    </header>
 
-        <!--Main-->
-        <main class="recipe-page">
+    <!-- Main content-->
+    <main class="recipe-page">
+      <!-- Recipe detail content -->
+      <section class="recipe-meta" aria-label="Recipe details">
+        <div class="meta-item">
+          <h2>Prep Time:</h2>
+          <p>15 min</p>
+        </div>
 
-            <section class="recipe-meta" aria-label="Recipe details">
-                <div class="meta-item">
-                  <h2>Prep Time:</h2>
-                  <p>15 min</p>
-                </div>
-        
-                <div class="meta-item">
-                  <h2>Cook Time:</h2>
-                  <p>35 min</p>
-                </div>
-        
-                <div class="meta-item">
-                  <h2>Difficulty:</h2>
-                  <p>Medium</p>
-                </div>
-              </section>
+        <div class="meta-item">
+          <h2>Cook Time:</h2>
+          <p>35 min</p>
+        </div>
 
-              <section class="recipe-grid" aria-label="Ingredients steps and picture">
-        
-                <section class="card" aria-label="Ingredients">
-                    <h2>Ingredients</h2>
-                    <ul>
-                      <li>8 oz spaghetti</li>
-                      <li>10–12 frozen meatballs (or homemade)</li>
-                      <li>1 jar marinara sauce (24 oz)</li>
-                      <li>1 tbsp olive oil (optional)</li>
-                      <li>2 cloves garlic (optional)</li>
-                      <li>Salt</li>
-                      <li>Parmesan (optional)</li>
-                    </ul>
-                  </section>
-          
-                  <section class="card" aria-label="Cooking Steps">
-                    <h2>Cooking Steps</h2>
-                    <ol>
-                      <li>Boil water, add salt, cook spaghetti (follow box time).</li>
-                      <li>In another pan, warm marinara sauce on medium-low.</li>
-                      <li>Add meatballs to sauce, cover, simmer 15–20 min (until hot).</li>
-                      <li>Drain pasta, mix with sauce (or plate pasta then add meatballs + sauce).</li>
-                      <li>Top with parmesan.</li>
-                    </ol>
-                  </section>
-        
-                <section class="card" aria-label="Picture">
-                  <h2>Picture</h2>
-                  <img src="assets/spaghetti2.png" alt="Spaghetti with meatballs">
-                </section>
-        
-              </section>
+        <div class="meta-item">
+          <h2>Difficulty:</h2>
+          <p>Medium</p>
+        </div>
+      </section>
+      <!-- Card Recipe -->
+      <section class="recipe-grid" aria-label="Ingredients steps and picture">
+        <section class="card" aria-label="Ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>8 oz spaghetti</li>
+            <li>10-12 frozen meatballs (or homemade)</li>
+            <li>1 jar marinara sauce (24 oz)</li>
+            <li>1 tbsp olive oil (optional)</li>
+            <li>2 cloves garlic (optional)</li>
+            <li>Salt</li>
+            <li>Parmesan (optional)</li>
+          </ul>
+        </section>
+  
+        <section class="card" aria-label="Cooking Steps">
+          <h2>Cooking Steps</h2>
+          <ol>
+            <li>Boil water, add salt, cook spaghetti (follow box time).</li>
+            <li>In another pan, warm marinara sauce on medium-low.</li>
+            <li>Add meatballs to sauce, cover, simmer 15-20 min (until hot).</li>
+            <li>Drain pasta, mix with sauce (or plate pasta then add meatballs + sauce).</li>
+            <li>Top with parmesan.</li>
+          </ol>
+        </section>
+        <!-- Card Picture -->
+        <section class="card" aria-label="Picture">
+          <h2>Picture</h2>
+          <img src="assets/spaghetti2.png" alt="Spaghetti with meatballs">
+        </section>
+      </section>
+      <!-- Source/Link -->
+      <section class="sources" aria-label="Sources">
+        <h2>Source</h2>
+        <a href="https://www.campbells.com/prego/recipes/quick-spaghetti-meatballs/">
+        Prego (Campbell's) - Quick Spaghetti & Meatballs
+        </a>
+      </section>
+    </main>
 
-              <!--Source-->
-              <section class="sources" aria-label="Sources">
-                <h2>Source</h2>
-                <a href="https://www.campbells.com/prego/recipes/quick-spaghetti-meatballs/">
-                Prego (Campbell’s) – Quick Spaghetti & Meatballs
-                </a>
-              </section>
-
-        </main>
-        <footer>
-            <p>2026 T&J Recipe Studio</p>
-        </footer>
-    </body>
+    <!-- Footer -->
+    <footer>
+        <p>2026 T&J Recipe Studio</p>
+    </footer>
+  </body>
 </html>
